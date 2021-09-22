@@ -46,6 +46,23 @@ a {
     text-decoration: none;
 }
 
+.page-header {
+    min-height: 340px;
+    background: transparent url("images/plane.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 31px;
+}
+
+.page-header__logo {
+    font-size: 0;
+    width: 250px;
+    height: 69px;
+    background: transparent url("images/logo@1x.jpg") no-repeat;
+    box-shadow: 0px 0px 11px 5px rgba(255, 255, 255, 0.65);
+    display: block;
+    margin: 0 auto;
+}
+
 .page-content {
     text-align: center;
 }
@@ -90,4 +107,11 @@ a {
     font-size: 21px;
     line-height: 30px;
     padding: 26px 45px 21px 44px;
+}
+
+/* only for retina displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .header__logo {
+        background-image: url("images/logo@2x.jpg");
+    }
 }
