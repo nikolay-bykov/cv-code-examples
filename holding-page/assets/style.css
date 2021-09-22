@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Brandon Grotesque";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local("Brandon Grotesque"), url("fonts/brandon-grotesque-regular.woff2") format("woff2"), url("fonts/brandon-grotesque-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Brandon Grotesque";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local("Brandon Grotesque"), url("fonts/brandon-grotesque-medium.woff2") format("woff2"), url("fonts/brandon-grotesque-medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Brandon Grotesque";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local("Brandon Grotesque"), url("fonts/brandon-grotesque-bold.woff2") format("woff2"), url("fonts/brandon-grotesque-bold.woff") format("woff");
+}
+
+:root {
+    --netvance-secondary-bright-blue: #53bad8;
+    --netvance-accent-pale-purple: #9d43b6;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    background-color: #2E327A;
+}
+
+a {
+    color: var(--netvance-secondary-bright-blue);
+    text-decoration: none;
+}
+
+.page-header {
+    min-height: 340px;
+    background: transparent url("images/plane.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 31px;
+}
+
+.page-header__logo {
+    font-size: 0;
+    width: 250px;
+    height: 69px;
+    background: transparent url("images/logo@1x.jpg") no-repeat;
+    box-shadow: 0px 0px 11px 5px rgba(255, 255, 255, 0.65);
+    display: block;
+    margin: 0 auto;
+}
+
+.page-content {
+    text-align: center;
+}
+
+.page-content__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 47px;
+}
+
+.page-content__subtitle {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    display: block;
+}
+
+.email-link {
+    font-size: 22px;
+    line-height: 31px;
+}
+
+.icon::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    position: relative;
+    top: 5px;
+}
+
+.icon--email::before {
+    background: transparent url("images/email.svg") no-repeat;
+}
+
+.coming-soon {
+    background-color: var(--netvance-accent-pale-purple);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 30px;
+    padding: 26px 45px 21px 44px;
+}
+
+/* only for retina displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .header__logo {
+        background-image: url("images/logo@2x.jpg");
+    }
+}
